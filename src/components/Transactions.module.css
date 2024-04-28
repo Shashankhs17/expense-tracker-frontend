@@ -1,0 +1,38 @@
+.transactions {
+    border: 1px solid var(--color-text-2);
+    border-bottom: 0;
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+.transactions__filters {
+    margin: 1rem auto;
+}
+
+.transactions__list {
+    margin: auto;
+    width: 60%;
+}
+
+.transactions__pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    width: 100%;
+}
+
+.transactions__pagination span {
+    background-color: var(--color-text-2);
+    color: var(--color-text-1);
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    border-radius: 0.4rem;
+}

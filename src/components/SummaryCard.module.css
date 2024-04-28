@@ -1,0 +1,39 @@
+.summary-card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--color-text-2);
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    color: var(--color-secondary);
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    padding: 5rem 2.5rem;
+    width: 100%;
+}
+
+.summary-card:last-child {
+    margin-bottom: 0;
+}
+
+.summary-card__left {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-card__title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+}
+
+.summary-card__amount {
+    color: var(--color-text-1);
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+}

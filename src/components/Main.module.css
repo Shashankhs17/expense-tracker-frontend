@@ -1,0 +1,21 @@
+.main__home {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem;
+
+    border-bottom: 1px solid var(--color-text-2);
+    width: 100%;
+}
+
+.main__home>*:first-child {
+    flex: 0 0 20%;
+}
+
+.main__home>*:last-child {
+    flex: 1 1 auto;
+}
+
+.main__charts {
+    padding: 4rem 0;
+}

@@ -1,0 +1,43 @@
+.transaction-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border-bottom: 1px solid white;
+    font-size: 1.5rem;
+    margin-bottom: 1.6rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.transaction-bar--space {
+    margin-left: auto;
+}
+
+.transaction-bar__icon {
+    color: var(--color-text-1);
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.transaction-bar__details {
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.transaction-bar__details > *:first-child {
+    font-weight: 800;
+    margin-bottom: 0.8rem;
+}
+
+.transaction-bar__details > *:last-child {
+    font-size: 1.4rem;
+}
+
+.transaction-bar__price {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+

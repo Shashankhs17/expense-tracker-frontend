@@ -1,0 +1,16 @@
+.charts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 2rem;
+}
+
+.charts__pie {
+    width: 30%;
+}
+
+.charts__bar {
+    width: 60%;
+}

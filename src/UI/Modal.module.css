@@ -1,0 +1,44 @@
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.548);
+    backdrop-filter: blur(3px);
+}
+
+.modal {
+    background-color: var(--color-text-2);
+    border: none;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 4rem 6rem;
+}
+
+.move {
+    animation: move-up 0.3s ease;
+}
+
+.zoom {
+    animation: zoom-in 0.2s ease-in-out;
+}
+
+@keyframes move-up {
+    0% {
+        transform: translateY(5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes zoom-in {
+    0% {
+        transform: scale(0.6);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 100%;
+    }
+}

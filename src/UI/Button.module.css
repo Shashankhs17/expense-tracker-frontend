@@ -1,0 +1,47 @@
+.btn {
+    border: 0;
+    color: var(--color-text-2);
+    cursor: pointer;
+    font-size: inherit;
+    font-weight: 600;
+    line-height: 100%;
+    outline: 0;
+    padding: 1rem 1.5rem;
+    text-transform: capitalize;
+    transition: all 0.1s ease-in-out;
+}
+
+.btn:hover {}
+
+.btn:active,
+.btn:focus {}
+
+.primary {
+    background-color: var(--color-text-1);
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+}
+
+.primary:hover {
+    background-color: transparent;
+    border: 1px solid var(--color-text-1);
+    color: var(--color-text-1);
+}
+
+.primary:active {
+    transform: scale(0.90);
+}
+
+.text {
+    background-color: transparent;
+    border: 1px solid var(--color-text-1);
+    border-radius: 0.4rem;
+    color: var(--color-text-1);
+    opacity: 0.8;
+}
+
+.text:hover {
+    /* border: 1px solid var(--color-secondary); */
+    /* color: var(--color-primary); */
+    opacity: 1;
+}
