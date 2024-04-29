@@ -66,18 +66,20 @@ function TransactionBar({ data, deleteHandler }) {
 				>
 					₹ {data.price}
 				</div>
-				<Button
-					variant="text"
-					onClick={showEditModal}
-				>
-					<CiEdit className="icon" />{" "}&nbsp;Edit
-				</Button>
-				<Button
-					onClick={showDeleteModal}
-					variant="primary"
-				>
-					Delete
-				</Button>
+				<div className={[classes["transaction-bar__actions"]]}>
+					<Button
+						variant="text"
+						onClick={showEditModal}
+					>
+						<CiEdit className="icon" /> &nbsp;Edit
+					</Button>
+					<Button
+						onClick={showDeleteModal}
+						variant="primary"
+					>
+						Delete
+					</Button>
+				</div>
 			</div>
 		</>
 	);

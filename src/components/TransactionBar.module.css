@@ -1,9 +1,19 @@
 .transaction-bar {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
+    gap: 2rem; */
+
+    display: grid;
+    grid-template-columns: [start-0] max-content 
+                            [end-0 start-1] 1fr 
+                            [end-1 start-2] max-content 
+                            [end-2 start-3] max-content;
+
+    column-gap: 2rem;
+    row-gap: 2rem;
+    align-items: center;
 
     border-bottom: 1px solid white;
     font-size: 1.5rem;
@@ -12,9 +22,9 @@
     text-align: center;
 }
 
-.transaction-bar--space {
+/* .transaction-bar--space {
     margin-left: auto;
-}
+} */
 
 .transaction-bar__icon {
     color: var(--color-text-1);
@@ -27,12 +37,12 @@
     text-align: left;
 }
 
-.transaction-bar__details > *:first-child {
+.transaction-bar__details>*:first-child {
     font-weight: 800;
     margin-bottom: 0.8rem;
 }
 
-.transaction-bar__details > *:last-child {
+.transaction-bar__details>*:last-child {
     font-size: 1.4rem;
 }
 
@@ -41,3 +51,17 @@
     font-weight: 400;
 }
 
+.transaction-bar__actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+    .transaction-bar__actions {
+        grid-column-start: start-0;
+        grid-column-end: end;
+    }
+}

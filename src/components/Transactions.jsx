@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useContext, useState } from "react";
 import { MdArrowBack, MdOutlineArrowForward } from "react-icons/md";
 
@@ -8,7 +9,7 @@ import { AppContext } from "../context/app-context";
 
 const MAX_TR_COUNT = 5;
 
-const Transactions = () => {
+const Transactions = ({ className }) => {
 	const appCtx = useContext(AppContext);
 	const [page, setPage] = useState(0);
 
@@ -25,7 +26,7 @@ const Transactions = () => {
 	}
 
 	return (
-		<div className={classes["transactions"]}>
+		<div className={`${classes["transactions"]} ${className}`}>
 			<h2>Recent Transactions</h2>
 			{appCtx.transactions.length > 0 ? (
 				<>

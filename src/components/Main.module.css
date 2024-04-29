@@ -8,14 +8,64 @@
     width: 100%;
 }
 
-.main__home>*:first-child {
+.sidebar {
     flex: 0 0 20%;
 }
 
-.main__home>*:last-child {
+.transactions {
     flex: 1 1 auto;
 }
 
 .main__charts {
     padding: 4rem 0;
+}
+
+@media screen and (max-width: 1300px) {
+    .main__home {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 60%;
+        margin: auto;
+
+        display: flex;
+        gap: 5rem;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .sidebar {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .sidebar {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .sidebar {
+        gap: 2rem;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sidebar {
+        flex-direction: column;
+        gap: 0;
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar {
+        width: 80%;
+    }
 }

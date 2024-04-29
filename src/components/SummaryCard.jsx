@@ -2,9 +2,9 @@
 import Button from "../UI/Button";
 import classes from "./SummaryCard.module.css";
 
-function SummaryCard({ title, amount, btnAction }) {
+function SummaryCard({ className, title, amount, btnAction }) {
 	return (
-		<div className={classes["summary-card"]}>
+		<div className={`${classes["summary-card"]} ${className}`}>
 			<div className={classes["summary-card__left"]}>
 				<span className={classes["summary-card__title"]}>{title}</span>
 				<span className={classes["summary-card__amount"]}>

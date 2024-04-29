@@ -37,7 +37,7 @@ const AddExpense = ({ closeModal, editData }) => {
 
 	return (
 		<div className={classes["form"]}>
-			<h3>Add new Expense</h3>
+			<h3>{editData ? "Edit" : "Add new "} Expense</h3>
 			<form onSubmit={handleSubmit}>
 				<Input
 					label="title"
@@ -84,7 +84,7 @@ const AddExpense = ({ closeModal, editData }) => {
 					type="submit"
 					variant="primary"
 				>
-					Submit
+					{editData ? "Save" : "Add"}
 				</Button>
 				<Button
 					type="button"

@@ -7,8 +7,8 @@ function Main() {
 	return (
 		<main className={classes["main"]}>
 			<div className={classes["main__home"]}>
-				<Sidebar />
-				<Transactions />
+				<Sidebar className={classes["sidebar"]} />
+				<Transactions className={classes["transactions"]} />
 			</div>
 			<div>
 				<div className={classes["main__charts"]}>

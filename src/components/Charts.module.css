@@ -14,3 +14,44 @@
 .charts__bar {
     width: 60%;
 }
+
+@media screen and (max-width: 1000px) {
+    .charts {
+        flex-direction: column;
+        gap: 8rem;
+    }
+
+    .charts__pie {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .charts__pie {
+        width: 50%;
+    }
+
+    .charts__bar {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .charts__pie {
+        width: 70%;
+    }
+
+    .charts__bar {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .charts__pie {
+        width: 95%;
+    }
+
+    .charts__bar {
+        width: 95%;
+    }
+}

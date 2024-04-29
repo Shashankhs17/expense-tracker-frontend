@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useContext, useState } from "react";
 import Modal from "../UI/Modal";
 import classes from "./Sidebar.module.css";
@@ -8,7 +9,7 @@ import { AppContext } from "../context/app-context";
 
 let modalContent;
 
-const Sidebar = () => {
+const Sidebar = ({ className }) => {
 	const [showModal, setShowModal] = useState(false);
 	const appCtx = useContext(AppContext);
 
@@ -34,13 +35,15 @@ const Sidebar = () => {
 			>
 				{modalContent}
 			</Modal>
-			<aside className={classes["sidebar"]}>
+			<aside className={`${classes["sidebar"]} ${className}`}>
 				<SummaryCard
+					className={classes["summary-card"]}
 					title="Balance"
 					amount={appCtx.balance}
 					btnAction={handleAddBalance}
 				/>
 				<SummaryCard
+					className={classes["summary-card"]}
 					title="Expense"
 					amount={appCtx.expense}
 					btnAction={handleAddExpense}

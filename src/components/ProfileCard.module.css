@@ -1,0 +1,64 @@
+.profile-card {
+    animation: move-down 0.3s ease;
+    background-color: var(--color-text-2);
+    border-radius: 0.5rem;
+    cursor: default;
+    font-size: 1.6rem;
+    padding: 3rem 5rem;
+    z-index: 999;
+}
+
+.profile-card__title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.profile-card__item {
+    color: var(--color-secondary);
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile-card__item::after {
+
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+
+    background-color: var(--color-text-1);
+    content: "";
+    height: 0.15rem;
+    transition: all 0.2s ease-in-out;
+    width: 0;
+}
+
+.profile-card__item:hover.profile-card__item::after {
+    left: 0;
+    width: 90%;
+}
+
+.profile-card__item:last-child {
+    margin-bottom: 0;
+}
+
+.profile-card__action {
+    margin-top: 1.5rem;
+}
+
+@keyframes move-down {
+    0% {
+        transform: translateY(-5rem);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}

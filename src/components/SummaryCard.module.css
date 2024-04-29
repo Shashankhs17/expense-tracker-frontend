@@ -7,8 +7,6 @@
 
     background-color: var(--color-text-2);
     border-radius: 1rem;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
     color: var(--color-secondary);
     font-size: 1.5rem;
     margin: 1rem auto;
@@ -37,3 +35,17 @@
     font-weight: 300;
     letter-spacing: 1px;
 }
+
+@media screen and (max-width: 900px) {
+    .summary-card {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* @media screen and (max-width: 500px) {
+    .summary-card {
+        flex-direction: row;
+    }
+} */

@@ -41,3 +41,22 @@
     border: 1px solid var(--color-secondary);
     outline: 0;
 }
+
+
+@media screen and (max-width: 1000px) {
+    .input-group {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .input-group {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .input-group {
+        width: 60vw;
+    }
+}

@@ -36,3 +36,21 @@
     padding: 1rem 2rem;
     border-radius: 0.4rem;
 }
+
+@media screen and (max-width: 1150px) {
+    .transactions__list {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .transactions__list {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .transactions__list {
+        width: 90%;
+    }
+}
